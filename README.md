@@ -1,32 +1,82 @@
-**[Dataset daily infected, deaths and recovered](#_jczym64vm6q6) 1**
+**[Iniciación a Python](#_jczym64vm6q6) 1**
 
-**[Mobility dataset](#_9mqaofimoeg3) 2**
+**[Dataset daily infected, deaths and recovered](#_ce01vvg61e2s) 2**
 
-[Feriados Argentina](#_wlimf5uzxc2) 2
+**[Mobility dataset](#_9mqaofimoeg3) 5**
 
-[Google mobility](#_43k5655kmq9a) 2
+[Feriados Argentina](#_wlimf5uzxc2) 5
 
-[Apple mobility](#_1gb0rjbcdemj) 2
+[Google mobility](#_43k5655kmq9a) 5
 
-**[Tests Argentinas y ocupación de camas](#_2p2wssrdlku3) 3**
+[Apple mobility](#_1gb0rjbcdemj) 6
 
-[Camas por país](#_1einwn84dnxq) 4
+**[Tests Argentinas y ocupación de camas](#_2p2wssrdlku3) 6**
 
-[Test per day dataset](#_ayes3grdjc4i) 4
+[Camas Argentina cada 100K](#_1einwn84dnxq) 6
 
-[Why is data on testing important?](#_2ajsw9mbo5o9) 4
+[Testeos](#_ayes3grdjc4i) 6
 
-[Daily COVID-19 tests per thousand people](#_2ko8puyubqgl) 5
+[Test per day dataset](#_7zgpgw1mj3fl) 7
 
-[Tests per case: how many tests to find one COVID-19 case?](#_kku18rlc2wca) 6
+[Why is data on testing important?](#_2ajsw9mbo5o9) 7
 
-[What can we learn from these measures about the pandemic?](#_4yjho32mvl2j) 7
+[Daily COVID-19 tests per thousand people](#_2ko8puyubqgl) 8
 
-**[Kaggle Predictions](#_w7kn2quwuvcx) 7**
+[Tests per case: how many tests to find one COVID-19 case?](#_kku18rlc2wca) 9
 
-**[Other](#_9gkzvfxartxt) 7**
+[What can we learn from these measures about the pandemic?](#_4yjho32mvl2j) 10
+
+**[Infectious Disease Modelling: Understanding the models that are used to model Coronavirus](#_w7kn2quwuvcx) 10**
+
+**[Kaggle Predictions](#_lfhl9s5pcf5x) 11**
+
+**[Regression sample](#_9gkzvfxartxt) 11**
+
+**[Other](#_uksd85lw5y1g) 11**
+
+# Iniciación a Python
+
+Les dejo una charla que tuve con una compañera del trabajo acerca de aprender Python y de cómo hice esto que está en este repo y espero que sirva de inspiración para alguien:
+
+_Yo de python no se mucho pero busco en internet como hacer las cosas y las adapto pero amen de no saber la sintanxis, si conocia algunas cosas que son las que preguntas vos como &quot;conceptos&quot;_
+
+_yo creo que mas q aprender python, que es como aprender cualquier lenguaje, hay que aprender que ecosistema / librerias tiene python para realizar las tareas mas comunes y como funcionan_
+
+_para manejar sets de datos, siempre se usa pandas, que es una librerias que crea una entidad en memoria y te permite manipularla de mil maneras y tiene muchas cosas de estadisticas ya metidas_ [_https://pandas.pydata.org/_](https://pandas.pydata.org/)
+
+_entonces al saber que pandas sirve para manipular datos, busco en google cosas como x ej python pandas load files from csv_
+
+_para graficar, se usa matplotlib.pyplot_
+
+[_https://matplotlib.org/3.2.1/api/\_as\_gen/matplotlib.pyplot.html_](https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.html)
+
+_y hago lo mismo, busco en google: python plot linear graph_ [_https://www.google.com/search?q=python+plot+linear+graph&amp;rlz=1C1GCEA\_enAR875AR875&amp;oq=python+plot+linear+graph&amp;aqs=chrome..69i57.177j0j1&amp;sourceid=chrome&amp;ie=UTF-8_](https://www.google.com/search?q=python+plot+linear+graph&amp;rlz=1C1GCEA_enAR875AR875&amp;oq=python+plot+linear+graph&amp;aqs=chrome..69i57.177j0j1&amp;sourceid=chrome&amp;ie=UTF-8)
+
+_y ahi te aparecen muchísimos blogs con info... lo que tiene python es una comunidad y librerías muy grande, asi que vas a encontrar info para todo_
+
+_con esas 2 librerías hice la mayor parte de todo_
+
+_después cosas básicas, como x ej como hacer un request a una url en python_
+
+_otras librerías que se usan siempre son NumPy y SciPy que sirven para hacer operaciones cientificas con numeros,_ [_https://numpy.org/_](https://numpy.org/)
+
+_todas esas son tipo standar que luego te sirve como input para los FWKs de AI_
+
+_uno de los mas faciles y mas usados en https://scikit-learn.org/stable/_
+
+_con solo esto, vas a podes hacer muchisisisisismas cosas de AI, analisis de datos, etc..._
+
+_después si te queres conectar a una BD SQL Server x ej, buscas como se hace y el resultado lo metes en un dataframe de PANDAS (la lib que te comentaba al principio)_
+
+_Para hacer pruebas siempre te conviene usar jupyter notebooks (que son esos que viste en mi repo), te lo podes instalar todo localmente mediante el entorno_ [_https://www.anaconda.com/_](https://www.anaconda.com/) _o usas_ [_https://colab.research.google.com/_](https://colab.research.google.com/) _que ya esta todo hosteado en la nube y no tenes que instalar ni pelearte con nada, azure tiene lo mismo_ [_https://notebooks.azure.com/_](https://notebooks.azure.com/)
+
+_para hacer cosas básicas y empezar, los planes gratis te sirven y te bastan... y si necesitas mas power, pagas o instalas todo en tu máquina local_
+
+_para mi todo esto que te explique es el verdadero valor y poder de python..._
 
 # Dataset daily infected, deaths and recovered
+
+[https://www.infobae.com/politica/2020/10/04/coronavirus-en-argentina-como-evoluciona-la-pandemia-a-casi-200-dias-del-inicio-de-la-cuarentena/](https://www.infobae.com/politica/2020/10/04/coronavirus-en-argentina-como-evoluciona-la-pandemia-a-casi-200-dias-del-inicio-de-la-cuarentena/)
 
 [Casos COVID-19](http://datos.salud.gob.ar/dataset/covid-19-casos-registrados-en-la-republica-argentina/archivo/fd657d02-a33a-498b-a91b-2ef1a68b8d16) detallados por ciudad, sexo edad, etc de la Republica Argentina
 
@@ -64,6 +114,10 @@
 
 [https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse\_covid\_19\_data%2Fcsse\_covid\_19\_time\_series%2Ftime\_series\_covid19\_confirmed\_global.csv&amp;filename=time\_series\_covid19\_confirmed\_global.csv](https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&amp;filename=time_series_covid19_confirmed_global.csv)
 
+MDZ Online: Altísima positividad: el dato que confirma que los testeos no son suficientes.
+
+[https://www.mdzol.com/sociedad/2020/10/12/altisima-positividad-el-dato-que-confirma-que-los-testeos-no-son-suficientes-111191.html](https://www.mdzol.com/sociedad/2020/10/12/altisima-positividad-el-dato-que-confirma-que-los-testeos-no-son-suficientes-111191.html)
+
 [https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse\_covid\_19\_data/csse\_covid\_19\_time\_series/time\_series\_covid19\_confirmed\_global.csv](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv)
 
 Same but JSON → [https://pomber.github.io/covid19/timeseries.json](https://pomber.github.io/covid19/timeseries.json)
@@ -78,11 +132,13 @@ Estaria bueno ver de agregar el origen de los casos
 2. Importados
 3. etc
 
-![](RackMultipart20200817-4-1njbqa1_html_f918d87864f35ac1.jpg)
+![](RackMultipart20201113-4-1vi827o_html_f918d87864f35ac1.jpg)
 
 [COVID-19. Casos registrados en la República Argentina](http://datos.salud.gob.ar/dataset/covid-19-casos-registrados-en-la-republica-argentina)
 
 [https://qlik3.ms.gba.gov.ar/sense/app/0a29a121-edef-4cd9-9ffd-fb5e298b5afd/sheet/c812ce2b-d071-4e1c-a7a2-3a63cf710b68/state/analysis](https://qlik3.ms.gba.gov.ar/sense/app/0a29a121-edef-4cd9-9ffd-fb5e298b5afd/sheet/c812ce2b-d071-4e1c-a7a2-3a63cf710b68/state/analysis)
+
+[https://towardsdatascience.com/develop-and-sell-a-machine-learning-app-from-start-to-end-tutorial-ed5b5a2b6b2b](https://towardsdatascience.com/develop-and-sell-a-machine-learning-app-from-start-to-end-tutorial-ed5b5a2b6b2b)
 
 # Mobility dataset
 
@@ -190,13 +246,13 @@ Incluye además:
 
 En [owid-covid-data 2020-05-20](https://docs.google.com/spreadsheets/d/1r6LVzt8s2BB3H5BPCRd2iB3QmioVd5nucbfSCAiwLjU/edit?usp=sharing) se puede ver un gráfico de evolución de testeo (new\_test) por fecha
 
-![](RackMultipart20200817-4-1njbqa1_html_c417ee97d279ad3f.png)
+![](RackMultipart20201113-4-1vi827o_html_c417ee97d279ad3f.png)
 
 ### Daily COVID-19 tests per thousand people
 
 [https://ourworldindata.org/coronavirus-testing#argentina](https://ourworldindata.org/coronavirus-testing#argentina)
 
-![](RackMultipart20200817-4-1njbqa1_html_734eba4e23c3c183.png)
+![](RackMultipart20201113-4-1vi827o_html_734eba4e23c3c183.png)
 
 [https://ourworldindata.org/grapher/daily-tests-per-thousand-people-smoothed-7-day?time=2020-04-15..&amp;country=~ARG](https://ourworldindata.org/grapher/daily-tests-per-thousand-people-smoothed-7-day?time=2020-04-15..&amp;country=~ARG)
 
@@ -206,11 +262,11 @@ En [owid-covid-data 2020-05-20](https://docs.google.com/spreadsheets/d/1r6LVzt8s
 
 test per case = **average(new\_tests today - 7 days) / average(new\_cases today - 7 days)**
 
-![](RackMultipart20200817-4-1njbqa1_html_829c3b9a9176a27a.png)
+![](RackMultipart20201113-4-1vi827o_html_829c3b9a9176a27a.png)
 
-![](RackMultipart20200817-4-1njbqa1_html_6e987757d872f316.png)
+![](RackMultipart20201113-4-1vi827o_html_6e987757d872f316.png)
 
-![](RackMultipart20200817-4-1njbqa1_html_49748212bd97cffb.png)
+![](RackMultipart20201113-4-1vi827o_html_49748212bd97cffb.png)
 
 Ver [owid-covid-data 2020-05-20](https://docs.google.com/spreadsheets/d/1r6LVzt8s2BB3H5BPCRd2iB3QmioVd5nucbfSCAiwLjU/edit?usp=sharing), libro &quot;Tests per case&quot;
 
@@ -238,6 +294,10 @@ Los parámetros necesarios para calcular esto los debería poder obtener a parti
   - [https://www.kaggle.com/dkjung/covid-19-eda-s-korea-forecasting-global](https://www.kaggle.com/dkjung/covid-19-eda-s-korea-forecasting-global)
   - [https://www.kaggle.com/eswarchandt/geospatial-analysis-on-covid-19-day-to-day-track](https://www.kaggle.com/eswarchandt/geospatial-analysis-on-covid-19-day-to-day-track)
 
+# Regression sample
+
+[https://github.com/Createdd/ml\_api\_covid/blob/master/development/predict\_covid.ipynb](https://github.com/Createdd/ml_api_covid/blob/master/development/predict_covid.ipynb)
+
 # Other
 
 [The end of exponential growth: The decline in the spread of coronavirus](https://www.timesofisrael.com/the-end-of-exponential-growth-the-decline-in-the-spread-of-coronavirus/)
@@ -263,3 +323,5 @@ Los parámetros necesarios para calcular esto los debería poder obtener a parti
 [https://cuchu.github.io/covid-19/](https://cuchu.github.io/covid-19/)
 
 [https://www.infobae.com/salud/2020/08/07/coronavirus-en-argentina-por-que-en-140-dias-de-cuarentena-obligatoria-no-bajo-nunca-la-curva-de-casos/](https://www.infobae.com/salud/2020/08/07/coronavirus-en-argentina-por-que-en-140-dias-de-cuarentena-obligatoria-no-bajo-nunca-la-curva-de-casos/)
+
+[https://www.lanacion.com.ar/el-mundo/prodigio-descubrio-posible-tratamiento-covid-19-tiene-solo-nid2490338](https://www.lanacion.com.ar/el-mundo/prodigio-descubrio-posible-tratamiento-covid-19-tiene-solo-nid2490338)
